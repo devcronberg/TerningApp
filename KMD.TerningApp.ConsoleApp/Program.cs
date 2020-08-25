@@ -1,4 +1,5 @@
 ﻿using KMD.TerningApp.Kerne;
+using KMD.TerningApp.Kerne.DI;
 using System;
 
 namespace KMD.TerningApp.ConsoleApp
@@ -8,6 +9,18 @@ namespace KMD.TerningApp.ConsoleApp
         static void Main(string[] args)
 
         {
+
+
+            TerningApp.Kerne.DI.Terning g = new Kerne.DI.Terning(new TilfældighedsGeneratorSystemRandom());
+            for (int i = 0; i < 20; i++)
+            {
+                g.Ryst();
+                g.Skriv();
+
+            }   
+            return;
+
+
 
             try
             {
