@@ -3,12 +3,12 @@
   <Class Name="KMD.TerningApp.Kerne.Terning">
     <Position X="6.25" Y="1.25" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAQAAAAAAAAgAAAIACAAAAAAACAAA=</HashCode>
+      <HashCode>AAAEAAEAAAAAAAAAQAAAAAAAAgAAAIACAAAAQAACAAA=</HashCode>
       <FileName>Terning.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="KMD.TerningApp.Kerne.LudoTerning">
-    <Position X="6.25" Y="4.25" Width="2.5" />
+    <Position X="8.75" Y="5.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAACAAAQA=</HashCode>
       <FileName>Terning.cs</FileName>

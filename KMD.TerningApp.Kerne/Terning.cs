@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace KMD.TerningApp.Kerne
 {
 
     public class Terning
     {
+        private static readonly HttpClient httpClient = new HttpClient();
+
+        public event Action<DateTime> Sekser;
+        public event Action<int> Rystet;
 
         public int Værdi { get; private set; }
         public DateTime RystetTid { get; private set; }
@@ -16,13 +22,26 @@ namespace KMD.TerningApp.Kerne
         public Terning()
         {            
             rnd = new Random();
-            this.Ryst();
+            this.Værdi = 1;
         }
 
         public void Ryst() {
             this.Værdi = rnd.Next(1, 7);
             this.RystetTid = DateTime.Now;
+            Rystet?.Invoke(this.Værdi);
+            if (this.ErSekser()) {
+                //if (Sekser != null) {
+                Sekser?.Invoke(this.RystetTid); 
+                //}
+            }
         }
+
+        public async Task RystAsync()
+        {
+            var response1 = await httpClient.GetStringAsync("https://www.random.org/integers/?num=1&min=1&max=6&col=1&base=10&format=plain&rnd=new");
+            this.Værdi = Convert.ToInt32(response1);
+        }
+
 
         public bool ErSekser() { 
             return this.Værdi == 6;
