@@ -7,11 +7,24 @@ namespace KMD.TerningApp.ConsoleApp
         static void Main(string[] args)
 
         {
-            Kerne.Terning t;
-            t = new Kerne.Terning();
-            t.Værdi = 1;
-            t.RystetTid = DateTime.Now;
-            Console.WriteLine(t.Værdi);
+
+            try
+            {
+                Kerne.Terning t;
+                t = new Kerne.Terning();
+                Console.WriteLine(t.Værdi);
+                //t.Værdi = -6;
+                // 
+                Console.WriteLine(t.Værdi);
+
+
+                Kerne.Terning t2 = new Kerne.Terning(6);
+                Console.WriteLine(t2.Værdi);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
