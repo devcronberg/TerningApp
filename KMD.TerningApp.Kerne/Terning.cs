@@ -7,6 +7,22 @@ using System.Threading.Tasks;
 namespace KMD.TerningApp.Kerne
 {
 
+
+    /*
+
+        - Avancerede (operator overload, relection, LINQ ...)
+        - Serialisering / Deserialisering (XML, JSON)
+        - NuGet
+          - Excel ... + ...
+        - DB2 / Sql - direkte kald
+          - EF (Entity Framework)
+        - HTTP / HTTPS
+
+        - Web / WPF / WinForm
+          - MVC / Blazor / Razor / JS / TS 
+
+    */
+
     public class Terning
     {
         private static readonly HttpClient httpClient = new HttpClient();
