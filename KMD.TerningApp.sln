@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMD.TerningApp.ConsoleApp", "KMD.TerningApp.ConsoleApp\KMD.TerningApp.ConsoleApp.csproj", "{B3EEF520-93A9-4E74-855E-F5350E34D82E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMD.TerningApp.Kerne", "KMD.TerningApp.Kerne\KMD.TerningApp.Kerne.csproj", "{4E329B5B-6A8B-4867-ADD9-F66EAC6E5DAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3EEF520-93A9-4E74-855E-F5350E34D82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3EEF520-93A9-4E74-855E-F5350E34D82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3EEF520-93A9-4E74-855E-F5350E34D82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3EEF520-93A9-4E74-855E-F5350E34D82E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E329B5B-6A8B-4867-ADD9-F66EAC6E5DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E329B5B-6A8B-4867-ADD9-F66EAC6E5DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E329B5B-6A8B-4867-ADD9-F66EAC6E5DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E329B5B-6A8B-4867-ADD9-F66EAC6E5DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3543C20E-4FBD-449E-A5D0-44175E3A57FA}
+	EndGlobalSection
+EndGlobal
