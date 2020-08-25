@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KMD.TerningApp.Kerne\KMD.TerningApp.Kerne.csproj" />
+  </ItemGroup>
+
 </Project>
