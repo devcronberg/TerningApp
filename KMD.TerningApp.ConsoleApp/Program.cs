@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KMD.TerningApp.Kerne;
+using System;
 
 namespace KMD.TerningApp.ConsoleApp
 {
@@ -10,16 +11,13 @@ namespace KMD.TerningApp.ConsoleApp
 
             try
             {
-                Kerne.Terning t;
-                t = new Kerne.Terning();
-                Console.WriteLine(t.Værdi);
-                //t.Værdi = -6;
-                // 
-                Console.WriteLine(t.Værdi);
+                Kerne.Terning t = new Kerne.Terning();
+                t.Skriv();
+                t.Ryst();
+                t.Skriv();
 
-
-                Kerne.Terning t2 = new Kerne.Terning(6);
-                Console.WriteLine(t2.Værdi);
+                LudoTerning l = new LudoTerning();
+                l.Skriv();
             }
             catch (Exception ex)
             {

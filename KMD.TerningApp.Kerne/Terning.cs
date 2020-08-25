@@ -4,47 +4,103 @@ using System.Text;
 
 namespace KMD.TerningApp.Kerne
 {
+
     public class Terning
     {
-        //// Offentlig field - felt
-        //public int Værdi;
-        //public DateTime RystetTid;
 
-        // Properties - Egenskaber
-        // Automatiake egenskaber
         public int Værdi { get; private set; }
         public DateTime RystetTid { get; private set; }
 
-        //private int værdi;
-        //private DateTime RystetTid;
+        private Random rnd = null;
 
-        //public int Værdi {
-        //    get {
-        //        return this.værdi;
-        //    }
-        //    //set {
-        //    //    this.værdi = value;
-        //    //}
-        //}
-
-        // default
         public Terning()
-        {
-            this.Værdi = 1;
+        {            
+            rnd = new Random();
+            this.Ryst();
         }
 
-        // Custom
-        public Terning(int værdi) {
-            if (værdi < 1 || værdi > 6)
-            {
-                Exception e = new Exception("Forkert værdi");
-                throw e;
-            }
-            this.Værdi = værdi;
+        public void Ryst() {
+            this.Værdi = rnd.Next(1, 7);
+            this.RystetTid = DateTime.Now;
+        }
+
+        public bool ErSekser() { 
+            return this.Værdi == 6;
+        }
+
+        public virtual void Skriv() {
+            Console.WriteLine($"[ {this.Værdi} ]");
+        }
+
+    }
+
+    public class LudoTerning : Terning {
+
+        public bool ErStjerne() {
+            return this.Værdi == 3;
+        }
+
+        public bool ErGlobus()
+        {
+            return this.Værdi == 5;
+        }
+
+        public override void Skriv()
+        {
+            if(ErStjerne())
+                Console.WriteLine("[ S ]");
+            else if (ErGlobus())
+                Console.WriteLine("[ G ]");
+            else
+                base.Skriv();
         }
 
 
     }
+
+
+
+    //public class Terning
+    //{
+    //    //// Offentlig field - felt
+    //    //public int Værdi;
+    //    //public DateTime RystetTid;
+
+    //    // Properties - Egenskaber
+    //    // Automatiake egenskaber
+    //    public int Værdi { get; private set; }
+    //    public DateTime RystetTid { get; private set; }
+
+    //    //private int værdi;
+    //    //private DateTime RystetTid;
+
+    //    //public int Værdi {
+    //    //    get {
+    //    //        return this.værdi;
+    //    //    }
+    //    //    //set {
+    //    //    //    this.værdi = value;
+    //    //    //}
+    //    //}
+
+    //    // default
+    //    public Terning()
+    //    {
+    //        this.Værdi = 1;
+    //    }
+
+    //    // Custom
+    //    public Terning(int værdi) {
+    //        if (værdi < 1 || værdi > 6)
+    //        {
+    //            Exception e = new Exception("Forkert værdi");
+    //            throw e;
+    //        }
+    //        this.Værdi = værdi;
+    //    }
+
+
+    //}
 
     //public enum TerningVærdi
     //{

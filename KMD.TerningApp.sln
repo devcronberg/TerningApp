@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMD.TerningApp.ConsoleApp",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMD.TerningApp.Kerne", "KMD.TerningApp.Kerne\KMD.TerningApp.Kerne.csproj", "{4E329B5B-6A8B-4867-ADD9-F66EAC6E5DAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMD.TerningApp.UnitTest", "KMD.TerningApp.UnitTest\KMD.TerningApp.UnitTest.csproj", "{0E723D89-28F1-441C-8C4A-CD37FB6C7BCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4E329B5B-6A8B-4867-ADD9-F66EAC6E5DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E329B5B-6A8B-4867-ADD9-F66EAC6E5DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E329B5B-6A8B-4867-ADD9-F66EAC6E5DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E723D89-28F1-441C-8C4A-CD37FB6C7BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E723D89-28F1-441C-8C4A-CD37FB6C7BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E723D89-28F1-441C-8C4A-CD37FB6C7BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E723D89-28F1-441C-8C4A-CD37FB6C7BCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
