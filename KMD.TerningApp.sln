@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMD.TerningApp.ConsoleApp", "KMD.TerningApp.ConsoleApp\KMD.TerningApp.ConsoleApp.csproj", "{B3EEF520-93A9-4E74-855E-F5350E34D82E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KMD.TerningApp.ConsoleApp", "KMD.TerningApp.ConsoleApp\KMD.TerningApp.ConsoleApp.csproj", "{B3EEF520-93A9-4E74-855E-F5350E34D82E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMD.TerningApp.Kerne", "KMD.TerningApp.Kerne\KMD.TerningApp.Kerne.csproj", "{4E329B5B-6A8B-4867-ADD9-F66EAC6E5DAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KMD.TerningApp.Kerne", "KMD.TerningApp.Kerne\KMD.TerningApp.Kerne.csproj", "{4E329B5B-6A8B-4867-ADD9-F66EAC6E5DAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMD.TerningApp.UnitTest", "KMD.TerningApp.UnitTest\KMD.TerningApp.UnitTest.csproj", "{0E723D89-28F1-441C-8C4A-CD37FB6C7BCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KMD.TerningApp.UnitTest", "KMD.TerningApp.UnitTest\KMD.TerningApp.UnitTest.csproj", "{0E723D89-28F1-441C-8C4A-CD37FB6C7BCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlDemo", "XmlDemo\XmlDemo.csproj", "{91265ED6-F033-4664-92AD-6540B3A31E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRNyheder.Kerne", "DRNyheder.Kerne\DRNyheder.Kerne.csproj", "{A7D6AB6C-79B0-423D-A600-F82D88D691DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonXml", "PersonXml\PersonXml.csproj", "{0A21FCBC-83DC-470C-B051-F16C207F2E3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDemo", "ExcelDemo\ExcelDemo.csproj", "{607DFC1F-91F2-40A4-972E-A593F313D5C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +35,22 @@ Global
 		{0E723D89-28F1-441C-8C4A-CD37FB6C7BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E723D89-28F1-441C-8C4A-CD37FB6C7BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E723D89-28F1-441C-8C4A-CD37FB6C7BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91265ED6-F033-4664-92AD-6540B3A31E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91265ED6-F033-4664-92AD-6540B3A31E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91265ED6-F033-4664-92AD-6540B3A31E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91265ED6-F033-4664-92AD-6540B3A31E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D6AB6C-79B0-423D-A600-F82D88D691DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D6AB6C-79B0-423D-A600-F82D88D691DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D6AB6C-79B0-423D-A600-F82D88D691DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D6AB6C-79B0-423D-A600-F82D88D691DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A21FCBC-83DC-470C-B051-F16C207F2E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A21FCBC-83DC-470C-B051-F16C207F2E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A21FCBC-83DC-470C-B051-F16C207F2E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A21FCBC-83DC-470C-B051-F16C207F2E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{607DFC1F-91F2-40A4-972E-A593F313D5C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607DFC1F-91F2-40A4-972E-A593F313D5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607DFC1F-91F2-40A4-972E-A593F313D5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607DFC1F-91F2-40A4-972E-A593F313D5C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
