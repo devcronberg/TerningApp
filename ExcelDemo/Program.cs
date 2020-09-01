@@ -14,7 +14,13 @@ namespace ExcelDemo
             DataSet ds;
             using (var stream = File.Open(@"c:\tmp\StamData.xlsx", FileMode.Open, FileAccess.Read))
             using (var reader = ExcelReaderFactory.CreateReader(stream))
-                ds = reader.AsDataSet();
+                ds = reader.AsDataSet(new ExcelDataSetConfiguration()
+                {
+                    ConfigureDataTable = (_) => new ExcelDataTableConfiguration()
+                    {
+                        UseHeaderRow = true
+                    }
+                });
 
             DataTable dt = ds.Tables[0];
             List<Person> lst = new List<Person>();
@@ -24,7 +30,7 @@ namespace ExcelDemo
                 if (i++ == 0)
                     continue;
                 
-                lst.Add(new Person { Navn = row["Column1"].ToString(), Forkortelse = row["Column0"].ToString() });
+                lst.Add(new Person { Navn = row["Navn"].ToString(), Forkortelse = row["Forkortelse"].ToString() });
             }
 
             foreach (var item in lst)
