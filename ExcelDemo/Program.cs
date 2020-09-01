@@ -27,8 +27,8 @@ namespace ExcelDemo
             int i = 0;
             foreach (DataRow row in dt.Rows)
             {
-                if (i++ == 0)
-                    continue;
+                //if (i++ == 0)
+                //    continue;
                 
                 lst.Add(new Person { Navn = row["Navn"].ToString(), Forkortelse = row["Forkortelse"].ToString() });
             }
