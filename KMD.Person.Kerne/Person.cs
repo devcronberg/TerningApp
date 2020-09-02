@@ -48,7 +48,21 @@ namespace KMD.Person.Kerne
                         UseHeaderRow = true
                     }
                 });
-            return null;
+
+            List<Person> lst = new List<Person>();
+
+            foreach (DataRow row in ds.Tables["personer"].Rows)
+            {
+                lst.Add(new Person
+                {
+                    Id = Convert.ToInt32(row["id"]),
+                    Navn = row["navn"].ToString(),
+                    Land = row["land"].ToString()
+                });
+            }
+
+
+            return lst;
         }
     }
 
