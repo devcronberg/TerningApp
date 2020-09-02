@@ -1,9 +1,11 @@
 ﻿using ExcelDataReader;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
 
 namespace KMD.Person.Kerne
 {
@@ -25,9 +27,19 @@ namespace KMD.Person.Kerne
     {
         public int Id { get; set; }
         public string Mærke { get; set; }
+        
+        [JsonIgnore]
+        [IgnoreDataMember]
+        [System.Xml.Serialization.XmlIgnore]
         public Person Person { get; set; }
 
     }
+
+    public class ListeAfPersoner
+    {
+        public List<Person> Personer { get; set; }
+    }
+
 
     public interface IDataRepository
     {
@@ -103,12 +115,13 @@ namespace KMD.Person.Kerne
     }
 
     public static class RepositoryFind {
-        public static IDataRepository FindRepository() { 
-            
-            if(DateTime.Now.Second%2==0)            
-                return new TestRepository();
-            else
-                return new ExcelRepository();
+        public static IDataRepository FindRepository() {
+
+            //if(DateTime.Now.Second%2==0)            
+            //    return new TestRepository();
+            //else
+            //  return new ExcelRepository();
+            return new ExcelRepository();
         }
     }
 
