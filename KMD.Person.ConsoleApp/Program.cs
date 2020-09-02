@@ -1,6 +1,7 @@
 ﻿using KMD.Person.Kerne;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace KMD.Person.ConsoleApp
 {
@@ -8,7 +9,8 @@ namespace KMD.Person.ConsoleApp
     {
         static void Main(string[] args)
         {
-            ExcelRepository r = new ExcelRepository();
+            IDataRepository r = RepositoryFind.FindRepository();
+
             var res = r.HentPersoner();
             foreach (var person in res)
             {
@@ -18,6 +20,14 @@ namespace KMD.Person.ConsoleApp
                     Console.WriteLine("\t" + bil.Mærke);
                 }
             }
+
+            var biler = res.SelectMany(i => i.Biler).ToList();
+            foreach (var bil in biler)
+                Console.WriteLine(bil.Mærke + " som tilhører " + bil.Person.Navn);
+
         }
     }
+
+
 }
+

@@ -78,5 +78,38 @@ namespace KMD.Person.Kerne
         }
     }
 
+    public class TestRepository : IDataRepository
+    {
+        public List<Person> HentPersoner()
+        {
+            List<Person> lst = new List<Person>();
+
+            for (int i = 0; i < 50; i++)
+            {
+                Person p = new Person
+                {
+                    Id = 1,
+                    Navn = Guid.NewGuid().ToString(),
+                    Land = "a",
+                    Biler = new List<Bil> { new Bil { Id = 1, Mærke = "x" }
+                    }
+                };
+                lst.Add(p);
+                p.Biler[0].Person = p;
+                
+            }            
+            return lst;
+        }
+    }
+
+    public static class RepositoryFind {
+        public static IDataRepository FindRepository() { 
+            
+            if(DateTime.Now.Second%2==0)            
+                return new TestRepository();
+            else
+                return new ExcelRepository();
+        }
+    }
 
 }
