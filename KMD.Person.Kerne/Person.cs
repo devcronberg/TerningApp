@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
+using System.Linq;
 
 namespace KMD.Person.Kerne
 {
@@ -61,8 +62,21 @@ namespace KMD.Person.Kerne
                 });
             }
 
+            foreach (DataRow row in ds.Tables["biler"].Rows)
+            {
+                Bil b = new Bil
+                {
+                    Id = Convert.ToInt32(row["id"]),
+                    Mærke = row["mærke"].ToString()
+                };
+                int personId = Convert.ToInt32(row["personid"]);
+                var p = lst.Where(i => i.Id == personId).FirstOrDefault();
+                b.Person = p;
+                p.Biler.Add(b);
+            }
 
-            return lst;
+
+                return lst;
         }
     }
 
