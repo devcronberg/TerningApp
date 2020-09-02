@@ -9,13 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KMD.TerningApp.Kerne", "KMD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KMD.TerningApp.UnitTest", "KMD.TerningApp.UnitTest\KMD.TerningApp.UnitTest.csproj", "{0E723D89-28F1-441C-8C4A-CD37FB6C7BCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlDemo", "XmlDemo\XmlDemo.csproj", "{91265ED6-F033-4664-92AD-6540B3A31E90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlDemo", "XmlDemo\XmlDemo.csproj", "{91265ED6-F033-4664-92AD-6540B3A31E90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRNyheder.Kerne", "DRNyheder.Kerne\DRNyheder.Kerne.csproj", "{A7D6AB6C-79B0-423D-A600-F82D88D691DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DRNyheder.Kerne", "DRNyheder.Kerne\DRNyheder.Kerne.csproj", "{A7D6AB6C-79B0-423D-A600-F82D88D691DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonXml", "PersonXml\PersonXml.csproj", "{0A21FCBC-83DC-470C-B051-F16C207F2E3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonXml", "PersonXml\PersonXml.csproj", "{0A21FCBC-83DC-470C-B051-F16C207F2E3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelDemo", "ExcelDemo\ExcelDemo.csproj", "{607DFC1F-91F2-40A4-972E-A593F313D5C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelDemo", "ExcelDemo\ExcelDemo.csproj", "{607DFC1F-91F2-40A4-972E-A593F313D5C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMD.Person.Kerne", "KMD.Person.Kerne\KMD.Person.Kerne.csproj", "{726A23CA-EA3D-48F8-9C7B-2743004915D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMD.Person.ConsoleApp", "KMD.Person.ConsoleApp\KMD.Person.ConsoleApp.csproj", "{8C7802A6-24FC-49CA-8137-D8DD6684B5F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{607DFC1F-91F2-40A4-972E-A593F313D5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{607DFC1F-91F2-40A4-972E-A593F313D5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{607DFC1F-91F2-40A4-972E-A593F313D5C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{726A23CA-EA3D-48F8-9C7B-2743004915D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726A23CA-EA3D-48F8-9C7B-2743004915D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726A23CA-EA3D-48F8-9C7B-2743004915D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726A23CA-EA3D-48F8-9C7B-2743004915D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7802A6-24FC-49CA-8137-D8DD6684B5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7802A6-24FC-49CA-8137-D8DD6684B5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7802A6-24FC-49CA-8137-D8DD6684B5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7802A6-24FC-49CA-8137-D8DD6684B5F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
