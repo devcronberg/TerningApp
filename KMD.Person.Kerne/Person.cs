@@ -74,9 +74,7 @@ namespace KMD.Person.Kerne
                 b.Person = p;
                 p.Biler.Add(b);
             }
-
-
-                return lst;
+            return lst;
         }
     }
 
