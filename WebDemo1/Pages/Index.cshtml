@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h1>Nyheder</h1>
+
+    <input type="text" name="name" value="" />
+    <button></button>
+
+    @{ 
+        var lst = DRNyheder.Kerne.DRNyhed.Hent("https://www.dr.dk/nyheder/service/feeds/allenyheder/");
+
+    }
+    <ul>
+        @foreach (var item in lst)
+        {
+            <li>@item.Titel</li>
+        }
+    </ul>
+
+</div>
